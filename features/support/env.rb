@@ -10,4 +10,6 @@ require 'cucumber'
 World(Capybara::DSL)
 World(Capybara::RSpecMatchers)
 
+#Selenium::WebDriver.for :internet_explorer
+#Capybara.default_driver = :selenium_internet_explorer
 Capybara.default_driver = :selenium_chrome

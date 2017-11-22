@@ -13,8 +13,7 @@ Then(/^i should see the search text box$/) do
 end
 
 When(/^i search for my given suggestion$/) do
-  amazon_start_page.search_text_box.set "ninten"
-  amazon_start_page.search_button.first.click
+  amazon_start_page.search_text_box.set "ninten\n"
 end
 
 Then(/^i see different results for my suggestions$/) do
